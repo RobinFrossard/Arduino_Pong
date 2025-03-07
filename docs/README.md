@@ -6,30 +6,35 @@ J'étais un peu perdu de base, je savais pas exactement quoi faire ni ce que je 
 
 La vidéo : https://www.youtube.com/watch?v=ZRL0GUqebFs
 Le code : [https://www.youtube.com/watch?v=ZRL0GUqebFs](https://educ8s.tv/arduino-pong-game/) (à télécharger)
-`Quelques notes sur la conception, des projets de référence, mon intention, etc.`
-
-![Description de l'image](/docs/assets/croquis-de-recherche.png)
 
 ## Circuit électronique
 
-`Quelques notes sur des composants particuliers de mon projet, des liens vers des datasheets, etc.`
+Attention à l'écran que l'on utilise lors du projet. Il faut juste adapter le code avec la bonne largeur et la bonne hauteur d'écran dans le code.
 
 ### Schéma
 
-![Description de l'image](/docs/assets/schematics_bb.png)
+![Description de l'image](/docs/assets/pong_bb.png)
 
 ### BOM
 
 | Réf | Composant      | Quantité | Description                            | Fournisseur / Lien                                            |
 | --- | -------------- | -------- | -------------------------------------- | ------------------------------------------------------------- |
 | 1   | Arduino Uno R3 | 1        | Microcontrôleur ATmega328P             | [Arduino](https://store.arduino.cc/products/arduino-uno-rev3) |
-| 2   | Breadboard     | 1        | Plaque de prototypage                  | [Lien](#)                                                     |
-| 3   | Neuroflux 42X  | 2        | Oscillateur à rétro-couplage quantique | [Lien](#)                                                     |
+| 2   | Breadboard     | 1        | Plaque de prototypage                  | [Arduino](https://store.arduino.cc/products/arduino-uno-rev3) |
+| 3   | HC-SR04        | 2        | Capteur de distance à ultra son        | [[[Lien](#) ](https://www.sparkfun.com/ultrasonic-distance-sensor-hc-sr04.html)](https://fr.aliexpress.com/item/1005003516264431.html) |
 
 ## Programme
 
-`Quelques notes sur des le code, des particularités, sa structure, l'usage de libs particulières, etc.`
+Dans le code, pour gérer l'affichage de l'écran j'ai utilisé 2 librairie : 
+- Adafruit_GFX
+- Adafruit_SSD1306
+
+Le code est assez simple, on affiche un écran d'accueil à l'allumage, au bout de 3 secondes la partie se lance. Dès qu'un joueur obtient 7 points, un écran annonce le vainqueur puis une autre partie recommence.
 
 ## Roadmap
 
-`Mention de choses pas tout à fait fonctionnelles ou améliorables. Idées de nouvelles fonctionnalités et liste d'améliorations souhaitables.`
+Ce qui aurait encore pu être améliorer : 
+- faire que la partie ne se lance que lorsque les 2 joueurs positionnent leurs mains devant le capteur afin de dire qu'ils sont prêt
+- réglage de bug de positition de la palette, desfois la palette donne un effet de téléportation
+- Ajout d'un Buzzer et d'un son
+- Ajout d'un mode solo
