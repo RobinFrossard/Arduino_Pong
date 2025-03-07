@@ -21,7 +21,8 @@ Attention à l'écran que l'on utilise lors du projet. Il faut juste adapter le 
 | --- | -------------- | -------- | -------------------------------------- | ------------------------------------------------------------- |
 | 1   | Arduino Uno R3 | 1        | Microcontrôleur ATmega328P             | [Arduino](https://store.arduino.cc/products/arduino-uno-rev3) |
 | 2   | Breadboard     | 1        | Plaque de prototypage                  | [Arduino](https://store.arduino.cc/products/arduino-uno-rev3) |
-| 3   | HC-SR04        | 2        | Capteur de distance à ultra son        | [[[Lien](#) ](https://www.sparkfun.com/ultrasonic-distance-sensor-hc-sr04.html)](https://fr.aliexpress.com/item/1005003516264431.html) |
+| 3   | HC-SR04        | 2        | Capteur de distance à ultra son        | [Lien](https://fr.aliexpress.com/item/1005003516264431.html) |
+| 4   | Purecrea       | 1        |  OLED Display Blue I2c                 | [Lien](https://www.galaxus.ch/en/s1/product/purecrea-oled-display-blue-i2c-128x32-091-development-boards-kits-36688816?utm_campaign=organicshopping&utm_source=google&utm_medium=organic&utm_content=8244233&supplier=8244233&gQT=0) |
 
 ## Programme
 
